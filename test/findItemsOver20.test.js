@@ -21,4 +21,24 @@ describe("The findItemsOver20 function", function() {
       assert.deepEqual(results, findItemsOver20(itemList));
       
     });
+
+    it("should find items over 30", function(){
+
+        var itemList = [
+            { name: 'apples', qty: 10 },
+            { name: 'pears', qty: 37 },
+            { name: 'apples', qty: 3 },
+        ];
+        
+        
+        
+        var results = [
+            { name: 'pears', qty: 37 },
+        ];
+      
+    
+      assert.deepEqual(results, findItemsOver20(itemList));
+      
+    });
+
 });
